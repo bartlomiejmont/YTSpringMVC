@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/pizza}" th:object="${pizza}" method="post">
+    <p>Pizza name: <input type="text" th:field="*{name}" /></p>
+    <p>Pizza size: <input type="text" th:field="*{size}" /></p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+
+
+</body>
+</html>
